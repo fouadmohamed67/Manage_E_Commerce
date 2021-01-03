@@ -1,0 +1,15 @@
+ .row_buttons form {
+     padding: 7px;
+     float: right;
+ }
+.item_row{
+    
+    border-bottom: 2px solid #007bff;
+    padding: 20px;
+}
+.image_items
+{
+    float: right;
+    height: 170px;
+    width: 170px;
+}

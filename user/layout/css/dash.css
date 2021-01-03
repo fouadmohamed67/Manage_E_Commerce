@@ -1,0 +1,57 @@
+.main
+{
+   
+    width: 100%;
+    margin-top: -8px;
+     min-height: 500px;
+    background-image: url(../images/fixed_image/wave.svg);
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+.section1 div .h1{
+    padding: 30px;
+    color: #FFF;
+}
+.section1 div .h6
+{
+    color: #FFF;
+    padding: 30px;
+    font-size: 20px;
+}
+ 
+.section1{
+    background-color: #273036;
+    padding: 20px;
+}
+.categories{
+    
+}
+.cat div .btn-primary{
+    color: #FFF;
+}
+.cat{
+    text-align: center;
+    min-height: 300px;
+    width:400px;
+    color: #000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 48px rgba(0,0,0,0.16);
+    margin-bottom: 20px;
+
+}
+.cat *{
+    padding: 10px;
+}
+.cat h3{
+    background-color: #e8e9eb;
+    height: 50px;
+    border-radius: 10px  10px 0px 0px;
+}
+.cat {
+    word-wrap: break-word;
+    transition: .2s all ease-in-out;
+}
+.cat:hover{
+    transform: scale(1.1,1.1);
+}

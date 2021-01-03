@@ -1,0 +1,119 @@
+.ele{
+     
+     padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.125)
+}
+.in-card-body{
+    padding: 0px;
+}
+.col{
+    padding: 0;
+}
+.row-counter{
+    margin-bottom: 20px;
+}
+.less-mar{
+    margin-top: 20px;
+}
+
+.counter{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.categories{
+    background-color: green;
+    color: #FFF;
+     font-weight: bolder;}
+.admins{
+    background-color: rgb(255, 138, 28);
+    color: #FFF;
+     font-weight: bolder;}
+.users{
+    background-color: rgb(16, 171, 161);
+    color: #FFF;
+    font-weight: bolder;}
+.items{
+    background-color: rgb(43, 58, 66);
+    color: #FFF;
+    font-weight: bolder;}
+.item_name{
+    padding-right: 10px;
+    font-size: 20px;
+        display: inline-block;
+        font-weight: bolder;
+        color: rgb(43, 58, 66);
+    }
+    .item_cat_name,.item_price{
+        display: inline-block;
+        font-weight: bolder;
+        opacity: .5;
+    }
+    .for_or{
+        font-weight: bold;
+    }
+    .cat_link{
+        color:green;
+        font-weight: 600;
+    }
+.for_adding_news{
+    margin: 20px;
+    min-height: 300px;
+    background:rgba(0,0,0,.03);
+    padding: 10px;
+     
+}
+.for_adding_news p{
+    font-weight: 500;
+    font-size: 25px;
+} 
+.for_adding_news h1{
+    font-weight: bolder;
+    color: #c9302c;
+} 
+.for_adding_news form textarea{
+    padding: 10px;
+}
+.for_adding_news form  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;
+   align-items: center;
+
+}
+.for_adding_news .form-group{
+    margin-top: 10px;
+}
+.label_subject{
+    margin-right: 5px;
+
+}
+ 
+.row_item_0,
+.row_item_1
+{
+    margin-bottom: 20px;   
+    padding:50px ;
+    width: 80%;
+   transition: all .2s ease-in-out;
+}
+.row_item_0:hover{
+    box-shadow: 10px 0px 10px #000;
+}
+.row_item_1:hover{
+    box-shadow: 10px 0px 10px #000;
+}
+
+.all_news{
+   
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items:  center;
+}
+.btn-news{
+    margin-top: 10px;
+}
+ 
+ 

@@ -1,0 +1,22 @@
+ 
+ .nav_color{
+     background-color: #273036;
+     font-weight: bold;
+     font-size: 20px;
+     color: #FFF;
+ }
+ .nav_color a{
+     color: #FFF;
+ }
+ .dropdown-menu .dropdown-item
+ {
+     color:#273036 ;
+ }
+ .navbar-toggler{
+     background-color: #FFF;
+     border: 1px solid #273036 ;
+ }
+ .navbar-toggler-icon{
+    color:#273036 ;
+    border: 1px solid #273036 ;
+}

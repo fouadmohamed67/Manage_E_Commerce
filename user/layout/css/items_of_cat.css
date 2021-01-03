@@ -1,0 +1,38 @@
+.section_items_page{
+    align-items: center;
+    text-align: center;
+}
+.section_items_page .h1{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 30px;
+    margin-bottom: 20px;
+
+}
+.for_image img{
+    width: 150px;
+    height: 150px;
+
+}
+.all_items{
+    padding: 20px;
+}
+ 
+ 
+.item_of_cat{
+    word-wrap: break-word;
+    word-wrap: normal;
+    margin-bottom: 20px;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid #000;
+}
+.item_of_cat h3{
+    background-color: #e8e9eb;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
