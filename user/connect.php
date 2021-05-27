@@ -1,8 +1,9 @@
 <?php
 
-  $dsn='mysql:host=localhost;dbname=MY_M';
-  $user='root';
-  $pass='';
+  $dsn='mysql:host=localhost;dbname=id15575106_my_m';
+  $user='id15575106_user_my_m';
+  $pass='Eg0>ul[K\#J37X>r';
+   
    
 
   try{

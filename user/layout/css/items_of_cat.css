@@ -23,16 +23,37 @@
     word-wrap: break-word;
     word-wrap: normal;
     margin-bottom: 20px;
-    padding: 0;
+    width: 20%;
     align-items: center;
     text-align: center;
     margin: 20px;
-    border: 1px solid #000;
-}
+    padding: 20px;
+    border-radius: 10px 10px 0 0 ;
+    background-color:   #eceef1 ;
+    border: 2px solid #EEE;
+ }
 .item_of_cat h3{
-    background-color: #e8e9eb;
+    background-color: #0e0f0f;
     height: 50px;
+    color: #FFF;
     line-height: 50px;
     width: 100%;
     border-radius: 10px 10px 0 0 ;
+}
+.btn_car{
+    color: #FFF;
+    padding-top: 10px;
+    background-color: rgb(224, 100, 17);
+
+}
+.btn_car:hover{
+    background-color: rgb(224, 146, 93);
+
+}
+.price_div{
+    background-color: #FFF;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    color: #000;
 }

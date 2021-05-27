@@ -3,8 +3,10 @@ session_start();
 $page_title="home user";
 include "init.php";
 
+ 
 if(isset($_SESSION['name'])  )
 {
+   
 
         $statement=$conn->prepare("SELECT * from categories ");
         $statement->execute();
@@ -22,19 +24,20 @@ if(isset($_SESSION['name'])  )
         <img srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/landers/short-lander/free-trial/default@mobile-3fe887017342aa5a2a0d2ad2d4d4755382e331ec1bebfb4c68579bbe89d4532b.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/landers/short-lander/free-trial/default@mobile-2x-1e95e12dd1cec4201eecf6f4f4001317b06dcfb8cfc9b6001f46030940a49cc2.png 2x" alt="">
       </section>
           <div class="main"> 
-            <div class="categories col" align="center">
+            <div class="categories row justify-content-around" align="center">
              <?php
 
                 foreach($all_categories as $cat)
                 {
                   ?>
-                    <div class="cat"> 
+                    <div class="cat mt-5"> 
                       <h3> <?php echo $cat['name']; ?></h3>
                         <div>
                           <p><?php echo $cat['description']; ?></p>
-                          <a class="btn btn-primary" href="itemsOfCategory.php?id=<?php echo $cat['id']; ?>">view items</a>
+                          <a class="btn btn-primary" href="itemsOfCategory.php?id=<?php echo $cat['id']; ?>&page_no=1">view items</a>
                         </div>
                     </div>
+                    
                   <?php
                 }
             
@@ -72,7 +75,8 @@ if(isset($_SESSION['name'])  )
 }
 else
 {
-  header ('location: ../admin/index.php');
-  exit();
+     ?><script type="text/javascript">goto("../admin/index.php");</script><?php
+ 
+  
 }
  

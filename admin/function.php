@@ -75,4 +75,11 @@
       $all->execute();
       return  $all->fetchColumn();
    }
+   //
+   function clear_shop_cart($conn)
+   {
+      $id_user=$_SESSION['id'];
+      $statement=("DELETE FROM cart_shop WHERE id_user=$id_user");
+      $conn->query($statement);
+   }
 

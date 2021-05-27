@@ -6,9 +6,14 @@ $no_nav='';
 $page_title='login';
 include "init.php";
 
-if(isset($_SESSION['username']))
+if(isset($_SESSION['name']))
 {
-    ?><script type="text/javascript">goto("dashbord.php");</script><?php
+    if($_SESSION['role']==1)
+   { ?><script type="text/javascript">goto("dashbord.php");</script><?php }
+   else
+   {
+       ?><script type="text/javascript">goto("../user/dashbord.php");</script><?php
+   }
 
      
 }
@@ -48,6 +53,7 @@ if(isset($_SESSION['username']))
                     $_SESSION['name']=$row['name'];
                     $_SESSION['id']=$row['id'];
                     $_SESSION['role']=$row['role'];
+                    clear_shop_cart($conn);
                     if($row['role']==1)
                     {
                         ?><script type="text/javascript">goto("dashbord.php");</script><?php

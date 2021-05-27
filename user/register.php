@@ -1,7 +1,6 @@
 <?php
 session_start();
-session_unset();
-session_destroy();
+ 
 $no_nav="";
 $page_title="Register";
 include "init.php";
@@ -30,20 +29,26 @@ include "init.php";
                 
 
             ));
-            session_start();
+            $statement=$conn->prepare("select * from users where email=?");
+            $statement->execute(array($email ));
+             $all_users=$statement->fetchAll();
+             foreach($all_users as $user)
+             {
+                  $_SESSION['id']=$user['id'];
+             }
+            
             $_SESSION['email']=$email;
             $_SESSION['name']=$name;
-            $_SESSION['id']=$user_id;
+           
             $_SESSION['role']=$role;
-            header('location: dashbord.php');
-            exit();
-        
+            ?><script type="text/javascript">goto("dashbord.php");</script><?php
+
 
     }
     else
     {
-        header ('location register.php');
-    }
+        
+    
 
   ?>
   
@@ -54,8 +59,7 @@ include "init.php";
                         </div>
                         <div class="card-body">
                             <form action="" method="POST">
-                             <input type="hidden" name="id" value=>
-                             <input type="hidden" name="oldpass" value=>
+                             
                              
                                         <div class="form-group">
                                             <label for="name">your name : </label>
@@ -120,5 +124,6 @@ include "init.php";
 
 
 <?php
+    }
 include "temp/footer.php";
 ?>

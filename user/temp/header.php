@@ -12,9 +12,12 @@
   <link rel="stylesheet" href="<?php echo  $css; ?>nav.css">
   <link rel="stylesheet" href="<?php echo  $css; ?>items_of_cat.css">
   <link rel="stylesheet" href="<?php echo  $css; ?>dash.css">
-
+  
+  
 
   <script type="text/javascript" src="<?php echo  $js; ?>my_j_query_js.js"></script>
+  <script type="text/javascript" src="<?php echo  $js; ?>count_shop.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  
 
